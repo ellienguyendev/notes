@@ -17,10 +17,10 @@ arr.shift()     // => [2,3,4,5]       ** extracts item from the beginning of an 
 arr.unshift(0)  // => [0,1,2,3,4,5]   ** adds items to the beginning of an array
 
 arr.splice(index,[deleteCount, elem1,...,elemN])
-arr.splice(0,2,"1","2")   // => ["1","2",3,4,5]     ** replaces items in an array
-arr.splice(2,0,33,333)    // => [1,2,33,333,3,4,5]  ** (insert)
-arr.splice(0,2)           // => [3,4,5] (delete)
-arr.splice(-1,0,55,555)   // => [1, 2, 3, 4, 55, 555, 5] (negative indexes: start from end)
+arr.splice(0,2,"1","2")   // => ["1","2",3,4,5]           ** replaces items in an array
+arr.splice(2,0,33,333)    // => [1,2,33,333,3,4,5]        ** inserts items into an array
+arr.splice(0,2)           // => [3,4,5]                   ** deletes items from an array
+arr.splice(-1,0,55,555)   // => [1, 2, 3, 4, 55, 555, 5]  ** negative index arg: start from end
 
 // you can always retrieve array of elements removed by doing:
 var removed = arr.splice(0,2) // => [1,2] (get removed elements)
@@ -87,7 +87,7 @@ flowers.split(',') // => ['Rose', 'Sunflower', 'Orchid'] ** splits a string into
 flowers.split('')  // => ['R','o','s','e',','S'...etc.]   ** an empty delim will split into individual characters
 
 var arrFlowers = ['Rose', 'Sunflower', 'Orchid']
-arrFlowers.join('*') // => 'Rose*Sunflower*Orchid' ** turns an array into a string joined by glue between Furthermore
+arrFlowers.join('*') // => 'Rose*Sunflower*Orchid' ** turns an array into a string joined by glue between them
 
 Array.reduce(function(accumulator, item, index, array){ ... }, [inititial])
 nums.reduce((sum, current) => sum + current, 0) // => 42 ** calculates a single value based on the values of the array. applies the function to each element and "carries on" the result to the the next call. accumulator param is the result of the previous function call or equals to initial for the first call, if initial is provided
