@@ -82,9 +82,9 @@ nums.sort((b,a) => a-b) // => [22, 13, 4, 2, 1]  ** sorts by descending order
 
 fruits.reverse() // => ["kiwi", "mango", "orange", "banana"] ** reverses elements in an array
 
-var flowers = 'Rose, Sunflower, Orchid'
+var flowers = 'Rose,Sunflower,Orchid'
 flowers.split(',') // => ['Rose', 'Sunflower', 'Orchid'] ** splits a string into an array by the given dilimeter
-flowers.split('')  // => ['R','o','s','e',','S'...etc.]   ** an empty delim will split into individual characters
+flowers.split('')  // => ['R','o','s','e',',','S'...etc.]   ** an empty delim will split into individual characters
 
 var arrFlowers = ['Rose', 'Sunflower', 'Orchid']
 arrFlowers.join('*') // => 'Rose*Sunflower*Orchid' ** turns an array into a string joined by glue between them
