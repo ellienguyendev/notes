@@ -76,14 +76,14 @@ var nums = [1,2,13,4,22]
 fruits.map(item => item.length * 2) // => [12, 12, 10, 8] ** calls the function on each item in the array and returns an array of the results
 
 fruits.sort() // => ["banana", "kiwi", "mango", "orange"] ** sorts an array as STRINGS by default
-nums.sort()   // => [1,13,2,22,4] ** beacuse .sort() uses strings to sort, need to pass in a compare function
+nums.sort()   // => [1,13,2,22,4]   ** beacuse .sort() uses strings to sort, need to pass in a compare function
 nums.sort((a,b) => a-b) // => [1, 2, 4, 13, 22]  ** sorts number values
 nums.sort((b,a) => a-b) // => [22, 13, 4, 2, 1]  ** sorts by descending order
 
 fruits.reverse() // => ["kiwi", "mango", "orange", "banana"] ** reverses elements in an array
 
 var flowers = 'Rose, Sunflower, Orchid'
-flowers.split(',') // => ['Rose', 'Sunflower', 'Orchid'] ** splits a string into an array by the given dilimeter
+flowers.split(',') // => ['Rose', 'Sunflower', 'Orchid']  ** splits a string into an array by the given dilimeter
 flowers.split('')  // => ['R','o','s','e',','S'...etc.]   ** an empty delim will split into individual characters
 
 var arrFlowers = ['Rose', 'Sunflower', 'Orchid']
