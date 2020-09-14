@@ -79,8 +79,35 @@ L.reverse()   # reverses the order of the elements in L
               # Out: [4,4,3,2,1]
               
 'g'.join(L)   # joins elememnts of list together as a string using g as a glue. If g is omitted, elements are joined together with nothing in between
-              # Out: '*'.join(L1) --> '555'
+              # Ex: '*'.join(L1) --> '555'
               
+              
+############## DICTIONARIES ##############
+
+d = {'Leon': 'Los Angeles', 'Stacy': 'Boston', 'Seth': 'Cambridge', 'Ellie': 'San Diego'}
+
+len(d)       # returns the number of items in d
+             # Out: 4
+
+d.keys()     # returns a view of the keys in d (in arbitrary order)
+             # Out: ['Leon', 'Stacy', 'Seth', 'Ellie']
+
+d.values()   # returns a view of the values in D (in arbitrary order)
+             # Out: ['Los Angeles', 'Boston', 'Cambridge', 'San Diego']          
+              
+k in d       # returns True if key k is in d
+             # Ex: 'Leon' in d --> True
+             
+d.get(k, v)  # returns d[k] if k is in d, and v otherwise
+
+d[k] = v     # associates the value of v with key k in d. If there is already a value associated with k, that value is replaced
+             # Ex: d['Vanessa'] = 'Encinitas' --> {'Leon': 'Los Angeles', 'Stacy': 'Boston', 'Seth': 'Cambridge', 'Ellie': 'San Diego', 'Vanessa': 'Encinitas'}
+             
+del d[k]     # removes the key k from d 
+
+for k in d   # iterates over the keys in d
+
+             
 ############## OTHER ############## 
 
 L2 = [1,2,3]
